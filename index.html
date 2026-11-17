@@ -57,7 +57,7 @@ p{margin:0}
 .tel{font:600 1.1rem/1 var(--F);color:var(--ink);text-decoration:none;white-space:nowrap}
 .tel small{display:block;font:400 .74rem/1.2 var(--F);color:var(--mut);margin-bottom:3px}
 .top .btn{min-height:48px;font-size:1rem;padding:0 22px}
-.burger{display:none;width:48px;height:48px;border:0;background:none;padding:12px;cursor:pointer}
+.burger{display:none;flex:none;width:48px;height:48px;border:0;background:none;padding:12px;cursor:pointer}
 .burger span{display:block;height:2px;background:var(--ink);margin:6px 0;transition:transform .2s,opacity .2s}
 /* hero: widok z ich tarasu; na dole bialy plot z logo */
 .hero{position:relative;overflow:hidden;background:#3c4a3a;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;min-height:calc(100svh - var(--hh))}
@@ -259,7 +259,7 @@ footer p{line-height:1.7}
   .top.open .burger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
   .top.open .burger span:nth-child(2){opacity:0}
   .top.open .burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-  .mtel{display:grid;place-items:center;width:46px;height:46px;border:1.5px solid var(--ink);border-radius:2px;color:var(--ink);margin-left:auto}
+  .mtel{display:grid;flex:none;place-items:center;width:46px;height:46px;border:1.5px solid var(--ink);border-radius:2px;color:var(--ink);margin-left:auto}
   .mtel svg{width:20px;height:20px}
   .mtel+.burger{margin-left:0}
 }
@@ -297,6 +297,10 @@ footer p{line-height:1.7}
   .lb figure{padding:60px 12px}
   .lb .p,.lb .n{top:auto;bottom:14px;margin:0}
   .lb .p{left:calc(50% - 60px)}.lb .n{right:calc(50% - 60px)}
+}
+@media (max-width:389px){
+  .logo{gap:9px}.logo img{height:34px}.logo b{font-size:.98rem}.logo small{font-size:.68rem}
+  .top .wrap{gap:8px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
