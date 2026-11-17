@@ -52,3 +52,11 @@
   
   var r=document.getElementById('rok');if(r)r.textContent=new Date().getFullYear();
 })();
+(function(){
+  var im=[].slice.call(document.querySelectorAll('img[data-src]'));
+  function ld(i){if(i.dataset.srcset){i.srcset=i.dataset.srcset;i.removeAttribute('data-srcset')}i.src=i.dataset.src;i.removeAttribute('data-src')}
+  if(!('IntersectionObserver' in window)){im.forEach(ld);return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){ld(e.target);io.unobserve(e.target)}})},{rootMargin:'400px 600px'});
+  im.forEach(function(i){io.observe(i)});
+  window.__ldAll=function(){im.forEach(function(i){if(i.dataset.src)ld(i)})};
+})();
