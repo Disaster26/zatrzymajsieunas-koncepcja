@@ -8,19 +8,20 @@
 <meta name="description" content="Dom wakacyjny na wyłączność w Bronkowicach, 6 km od Bodzentyna: do 12 osób, 5 sypialni, 4 łazienki, 180 m2, sauna Ruska Bania i jacuzzi opalane drewnem, widok na Łysogóry. Tel. 606 378 478.">
 <meta name="theme-color" content="#1F3A2C">
 <link rel="icon" href="img/znak.svg" type="image/svg+xml">
-<link rel="preload" as="image" href="img/hero-m-640.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-640.webp 640w, img/hero-m-720.webp 720w, img/hero-m-840.webp 840w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
-<link rel="preload" as="image" href="img/hero-d-1440.webp" imagesrcset="img/hero-d-960.webp 960w, img/hero-d-1440.webp 1440w, img/hero-d-1920.webp 1920w, img/hero-d-2560.webp 2560w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="image" type="image/avif" imagesrcset="img/hero-m-480.avif 480w, img/hero-m-640.avif 640w, img/hero-m-750.avif 750w, img/hero-m-900.avif 900w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" type="image/avif" imagesrcset="img/hero-d-960.avif 960w, img/hero-d-1440.avif 1440w, img/hero-d-1920.avif 1920w, img/hero-d-2560.avif 2560w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
 <link rel="preload" as="font" type="font/woff2" href="fonts/lora-rdzen.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/jost-rdzen.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/lora-pl.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/jost-pl.woff2" crossorigin>
 <style>
-@font-face{font-family:Lora;font-weight:400 700;font-display:swap;src:url(fonts/lora-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026}
-@font-face{font-family:Lora;font-weight:400 700;font-display:swap;src:url(fonts/lora-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
-@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
-@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
-@font-face{font-family:"Lora fb";src:local("Georgia");size-adjust:104%;ascent-override:88%;descent-override:24%;line-gap-override:0%}
-@font-face{font-family:"Jost fb";src:local("Arial");size-adjust:94%;ascent-override:112%;descent-override:30%;line-gap-override:0%}
+@font-face{font-family:Lora;font-weight:400 700;font-display:optional;src:url(fonts/lora-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:Lora;font-weight:400 700;font-display:optional;src:url(fonts/lora-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Jost;font-weight:300 700;font-display:optional;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:optional;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Lora fb";font-weight:300 500;src:local("Georgia");size-adjust:108.5%;ascent-override:92.7%;descent-override:25.3%;line-gap-override:0%}
+@font-face{font-family:"Lora fb";font-weight:600 800;src:local("Georgia Bold"),local("Georgia-Bold");size-adjust:93.3%;ascent-override:107.8%;descent-override:29.4%;line-gap-override:0%}
+@font-face{font-family:"Jost fb";src:local("Arial");size-adjust:95.6%;ascent-override:112%;descent-override:39.2%;line-gap-override:0%}
 /* kolor dokladnie z logo: zlota kreska #BFA26C; zielen lasu za domem jako mocna sekcja */
 :root{--zl:#BFA26C;--zl-d:#7A6230;--zl-h:#CDB383;--las:#1F3A2C;--las-d:#16201B;--ink:#1B1A17;--mut:#4F5652;--g:#F2F3F5;--line:#DADDDF;--hh:78px;--w:min(calc(100vw - 32px),1760px);--S:Lora,"Lora fb",Georgia,serif;--F:Jost,"Jost fb",Arial,sans-serif;
 /* motyw: sztachety plotu z logo (luk na gorze, jedna listwa) */
@@ -324,7 +325,9 @@ footer p{line-height:1.7}
 <main>
 <section class="hero" id="start" style="padding:0">
   <div class="ph"><picture>
-    <source media="(max-width:760px)" srcset="img/hero-m-480.webp 480w, img/hero-m-640.webp 640w, img/hero-m-720.webp 720w, img/hero-m-840.webp 840w" sizes="100vw" width="840" height="1401">
+    <source media="(max-width:760px)" type="image/avif" srcset="img/hero-m-480.avif 480w, img/hero-m-640.avif 640w, img/hero-m-750.avif 750w, img/hero-m-900.avif 900w" sizes="100vw" width="900" height="1501">
+    <source media="(max-width:760px)" srcset="img/hero-m-480.webp 480w, img/hero-m-640.webp 640w, img/hero-m-750.webp 750w, img/hero-m-900.webp 900w" sizes="100vw" width="900" height="1501">
+    <source type="image/avif" srcset="img/hero-d-960.avif 960w, img/hero-d-1440.avif 1440w, img/hero-d-1920.avif 1920w, img/hero-d-2560.avif 2560w" sizes="100vw" width="2560" height="1440">
     <img src="img/hero-d-1440.webp" srcset="img/hero-d-960.webp 960w, img/hero-d-1440.webp 1440w, img/hero-d-1920.webp 1920w, img/hero-d-2560.webp 2560w" sizes="100vw" width="2560" height="1440" fetchpriority="high" alt="Widok z tarasu domu na zielone pagórki i las w Bronkowicach">
   </picture></div>
   <div class="txt">
